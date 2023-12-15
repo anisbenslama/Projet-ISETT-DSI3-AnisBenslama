@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+</head>
+
+<style>
+  form {
+    width: 50%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+}
+form input[type="text"],
+form textarea {
+    width: 100%; 
+    padding: 8px; 
+    margin-bottom: 12px; 
+    box-sizing: border-box; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+form button[type="submit"] {
+    background-color: rgb(123, 153, 245); 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 1px; 
+    cursor: pointer; 
+}
+
+form button[type="submit"]:hover {
+    background-color: rgb(123, 153, 245); 
+}
+</style>
+<body>
+    <form action="/addnews" method="get">
+        <label for="name">Titre </label>
+        <br>
+        <input type="text" id="name" name="titre" required minlength="4" maxlength="15" size="33" />
+        <br> 
+        <label for="story"> description</label>
+        <br>
+        <textarea id="story" name="description" rows="5" cols="33">
+            
+            </textarea>
+            <br>
+        <button type="submit" >Ajouter</button>
+    </form>
+</body>
+</html>
